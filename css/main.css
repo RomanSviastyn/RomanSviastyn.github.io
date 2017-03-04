@@ -1,0 +1,265 @@
+body{
+	/*background: #E2E7EC;*/
+	background: url(../img/body-bg.png);
+}
+
+/* error block*/
+#error_block{position:fixed;top:150px;width:50%;margin:0 25%;padding:40px;background:#cbbd92;opacity:.75;text-align:center;font:14pt Verdana;box-sizing:border-box;border-radius:20px;z-index:999;display: none;}
+#close_window{width:20px;height:20px;background:url(../img/bg_cancel.png) no-repeat;position:absolute;top:5px;right:5px}
+#close_window:hover{background:url(../img/bg_cancel-1.png) no-repeat;cursor:pointer}
+
+.container{
+	width: auto;
+	margin: 0 80px;
+	display: block;
+	background: rgba(255,255,255,0.5);
+	box-shadow: 0 0 20px 10px rgba(0,0,0,0.5);
+}
+/* //alternative
+.add_notice{
+	transform: rotate(90deg) translateY(150%) translateX(-50%);
+	position: fixed;
+	top: 50%;
+	left: 0;
+	background: red;
+	padding: 5px 10px;
+	border-radius: 5px 5px 0 0;
+}
+*/
+.add_notice{
+	transform: rotate(45deg) translateX(30%);
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: red;
+	padding: 5px 50px;
+	border-radius: 5px 5px 0 0;
+}
+
+.add_notice:hover a{
+	cursor: pointer;
+	color: #fff;
+	transition: 0.3s color;
+}
+
+.add_notice a{
+	color: rgba(255,255,255,0.85);
+	text-decoration: none;
+}
+
+/*Header*/
+header{
+	margin: 30px 0;
+}
+
+header>.container{
+	font: 28pt bold Arial;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 20px 0;
+	border-radius: 10px;
+	color: #000;
+	overflow: hidden;
+}
+
+/*Navigation*/
+nav{margin-bottom: 30px}
+
+nav>.container{
+	padding: 5px 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display: inline;
+	padding: 10px 25px;
+	margin: 0;
+}
+
+nav li:hover {
+	text-decoration: underline;
+	background: rgba(255,255,255,0.85);
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.1em;
+}
+
+/*Content*/
+.content>.container{
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.content p{
+	margin: 10px;
+}
+
+#table{
+	overflow: hidden;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: separate;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+
+#table th{
+	font-size: 1.1rem;
+	padding: 10px;
+	text-align: center;
+}
+
+#table th:hover{
+	cursor: pointer;
+}
+
+#table td{
+	padding: 10px;
+	border-top: 1px solid black;
+}
+
+#table td:not(:last-child), th:not(:last-child){
+	border-right: 1px solid black;
+}
+
+.content form{
+	margin: 20px auto;
+	margin-left: 50%;
+}
+
+#captcha-form{
+	transform: translateX(-50%);
+}
+
+#login-form{
+	transform: translateX(-25%);
+}
+
+.content form input{
+	background: rgba(0,0,0,0.15);
+}
+
+.content form input, textarea{
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	padding: 3px 5px;
+	transition: 0.1s background;
+}
+
+.content form textarea{
+	font: 17px cursive;
+	background: url(../img/bg_textarea_row.png) rgba(0,0,0,0.15) 0 1px;
+	padding-right: 40px;
+}
+
+.content form input:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.25);
+	transition: 0.3s background;
+}
+
+.content form input[type=submit]{
+	font-size: 1.1rem;
+	float: right;
+}
+
+/*pagination*/
+#pagination {
+	margin: 10px 0;
+}
+
+#pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+#pagination .active {
+	background: rgba(0,0,0,0.5);
+	color: white;
+}
+
+#pagination ul{
+	list-style: none;
+	text-align: center;
+}
+
+#pagination ul>li{
+	padding: 5px;
+	display: inline-block;
+	transition: 0.75s background;
+}
+
+#pagination ul>li a{transition: 0.75s background;}
+
+#pagination ul>li:hover a{
+	background: rgba(0,0,0,0.25);
+	cursor: pointer;
+	transition: 0.3s background;
+}
+
+/*footer*/
+footer{
+	margin-top: 30px;
+}
+
+footer a{
+	color: black;
+}
+footer>.container{
+	border-radius: 10px 10px 0 0;
+	padding: 10px;
+}
+
+footer>.container>ul{
+	list-style: none;
+}
+
+footer li{
+	margin: 5px;
+}
+
+.copyright{
+	text-align: center;
+	font-size: 0.9em;
+}
+
+#error_404_bg {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: none;
+	background: url(../img/error_404_bg.png) no-repeat center;
+}
+
+#error_404_bg a {
+	text-decoration: none;
+	font-size: 20pt;
+	font-weight: 400;
+	font-family: Myriad Pro;
+	color: #666666;
+	position: relative;
+	top: 80px;
+	left: 20px;
+}
+
+#error_404_bg a:hover {
+	color: #FFA60A;
+}
+
+#edit_notice,#delete_notice{padding:0;margin:0;border:none;width:24px;height:24px;font-size:0;float:none;overflow:hidden;}
+#edit_notice{background:url(../img/bg_edit.png)}
+#delete_notice{background:url(../img/bg_error.png)}
+#edit_notice:hover, #delete_notice:hover{cursor: pointer;}
